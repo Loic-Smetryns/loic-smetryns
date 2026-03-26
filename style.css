@@ -39,6 +39,8 @@ header {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+
+    overflow-x: scroll;
 }
 
 nav {
@@ -47,6 +49,7 @@ nav {
     max-width: var(--container-width);
     margin: auto;
     padding: 0 20px;
+    gap: 15px;
 }
 
 nav a {
@@ -57,6 +60,7 @@ nav a {
     letter-spacing: 1px;
     font-size: 0.9em;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 nav a:hover {
