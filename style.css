@@ -113,8 +113,14 @@ h3 {
     color: var(--title-h2);
 }
 
-.hero { display: flex; align-items: center; gap: 50px; }
+.hero { 
+    display: flex; 
+    align-items: center; 
+    gap: 50px; 
+}
+
 .hero-text { flex: 1; }
+
 .profile-pic {
     width: 220px; height: 220px; border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.8);
@@ -126,13 +132,45 @@ h3 {
 .profile-pic:hover { transform: translateY(-10px); }
 @media (max-width: 768px) { .hero { flex-direction: column-reverse; text-align: center; } }
 
-.skills-grid { display: flex; gap: 40px; flex-wrap: wrap; }
-.skills-column { flex: 1; min-width: 300px; }
-ul { list-style-type: none; padding-left: 0; }
-ul li { padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.5); display: flex; align-items: center; }
-ul li::before { content: "✦"; color: var(--title-h2); font-size: 1.2em; margin-right: 12px; }
+.skills-grid { 
+    display: flex; 
+    gap: 40px; 
+    flex-wrap: wrap; 
+    overflow-x: scroll;
+}
 
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.skills-column { 
+    flex: 1; 
+    min-width: 300px; 
+}
+
+ul { 
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+ul li { 
+    padding: 12px 0; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); 
+    display: flex; 
+    align-items: center; 
+}
+
+ul li::before { 
+    content: "✦"; 
+    color: var(--title-h2); 
+    font-size: 1.2em; 
+    margin-right: 12px; 
+}
+
+.projects-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+
+    overflow-x: scroll;
+}
+
 .project-card {
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -143,35 +181,66 @@ ul li::before { content: "✦"; color: var(--title-h2); font-size: 1.2em; margin
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
-.project-tags { margin: 15px 0; display: flex; gap: 8px; flex-wrap: wrap; }
+.project-tags { 
+    margin: 15px 0; 
+    display: flex; 
+    gap: 8px; 
+    flex-wrap: wrap; 
+}
+
 .project-tags span {
-    background: rgba(59, 130, 246, 0.15); color: var(--title-h1);
-    padding: 6px 14px; border-radius: 20px; font-size: 0.85em;
-    font-weight: bold; border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(59, 130, 246, 0.15); 
+    color: var(--title-h1);
+    padding: 6px 14px; 
+    border-radius: 20px; 
+    font-size: 0.85em;
+    font-weight: bold; 
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .project-card p a { 
-    color: var(--title-h2); text-decoration: none; font-weight: bold; 
-    margin-right: 15px; border-bottom: 2px solid transparent; transition: border-color 0.3s;
+    color: var(--title-h2); 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin-right: 15px; 
+    border-bottom: 2px solid transparent; 
+    transition: border-color 0.3s;
 }
 .project-card p a:hover { border-color: var(--title-h2); }
 
-.social-links { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
+.social-links { 
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 30px; 
+}
+
 .social-btn {
-    background: rgba(255, 255, 255, 0.6); color: var(--title-h1);
-    padding: 12px 28px; text-decoration: none; border-radius: 30px;
-    font-weight: bold; border: 1px solid rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    background: rgba(255, 255, 255, 0.6); 
+    color: var(--title-h1);
+    padding: 12px 28px; 
+    text-decoration: none; 
+    border-radius: 30px;
+    font-weight: bold; 
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
 .social-btn:hover {
-    background: var(--title-h2); color: white;
-    transform: translateY(-3px); border-color: var(--title-h2);
+    background: var(--title-h2); 
+    color: white;
+    transform: translateY(-3px); 
+    border-color: var(--title-h2);
     box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
 }
 
 footer {
-    text-align: center; padding: 30px; background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px); border-top: 1px solid rgba(255, 255, 255, 0.5);
-    color: var(--text-main); font-size: 0.9em;
+    text-align: center; 
+    padding: 30px; 
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); 
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    color: var(--text-main); 
+    font-size: 0.9em;
 }
 
 @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
