@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Loïc Smetryns</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#education">Formation</a>
+            <a href="#activities">Activités</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero" id="about">
+            <div class="hero-text">
+                <h1>Loïc Smetryns</h1>
+                <p class="subtitle dev">Étudiant en informatique</p>
+                <p>
+                    Bienvenue sur mon portfolio ! Je suis un étudiant en licence informatique et au CMI Informatique de l'URCA.
+                    Je suis passionné par l'informatique et l'intelligence artificielle. J'ai commencé mon apprentissage en 
+                    autodidacte et j'aime apprendre de nouvelles choses.
+                </p>
+            </div>
+            <img src="img/photo.jpeg" alt="Photo de Loïc Smetryns" class="profile-pic">
+        </section>
+
+        <section id="skills">
+            <h2>Mes Compétences</h2>
+            <div class="skills-grid">
+                <div class="skills-column">
+                    <h3>Techniques (Hard Skills)</h3>
+                    <ul>
+                        <li><strong>Générale:</strong> Java, C#, Python, C, Rust</li>
+                        <li><strong>Calcul Scientifique :</strong> Numpy, MatplotLib</li>
+                        <li><strong>Machine Learning :</strong> Scikit-learn Pytorch, Tensorflow</li>
+                        <li><strong>Calculs parallèles :</strong> OpenMP, MPI</li>
+                        <li><strong>Front-end :</strong> JavaScript, TypeScript, React</li>
+                        <li><strong>Back-end :</strong> PHP, Laravel, FastAPI, Django, SQL</li>
+                        <li><strong>Outils :</strong> Git, Docker</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h3>Transversales (Soft Skills)</h3>
+                    <ul>
+                        <li>Résolution de problèmes complexes et travail en équipe</li>
+                        <li>Apprentissage rapide et capacité à acquérir de nouvelles compétences en autodidacte</li>
+                        <li>Communication orale et visuelle, avec une capacité à faire des présentations devant des publics variés</li>
+                        <li>Pédagogie et aptitude à vulgariser des concepts techniques complexes auprès de non-initiés</li>
+                        <li>Autonomie, gestion du temps & veille technologique</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Sokoban-Solver</h3>
+                    <p>
+                        Utilitaire permettant de résoudre un niveau de sokoban exploitant le multithreading.
+                    </p>
+                    <div class="project-tags">
+                        <span>C</span>
+                        <span>OpenMP</span>
+                    </div>
+                    <p><a href="https://github.com/Loic-Smetryns/sokoban-solver" target="_blank">Code GitHub ↗</a></p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>DBSCAN</h3>
+                    <p>
+                        Implémentation de l'algorithme DBSCAN en Rust. Utilisation de PyO3 et Maturin pour une
+                        bibliothèque Python haute performance.
+                    </p>
+                    <div class="project-tags">
+                        <span>Rust</span>
+                        <span>Py03 / Maturin</span>
+                        <span>Python</span>
+                    </div>
+                    <p><a href="https://github.com/Loic-Smetryns/dbscan" target="_blank">Code GitHub ↗</a></p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Isoka</h3>
+                    <p>
+                        Application web qui permet de manipuler un jeu de cartes.
+                    </p>
+                    <div class="project-tags">
+                        <span>TypeScript</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <p><a href="https://github.com/Loic-Smetryns/isoka" target="_blank">Code GitHub ↗</a></p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Limonada</h3>
+                    <p>
+                        API REST d'une base de donnée scientifique répertoriant des résultats de
+                        simulation de molécules.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Django/Django REST Framework</span>
+                    </div>
+                    <p><a href="https://github.com/Loic-Smetryns/LimonadaMD-API-REST" target="_blank">Code GitHub ↗</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Ma Formation</h2>
+            <div>
+                <h3>L3 informatique / CMI Informatique</h3>
+                <p class="subtitle univ"><strong>Université de Reims Champagne-Ardenne</strong> | <em>2023 - Aujourd'hui</em></p>
+            </div>
+        </section>
+
+        <section id="activities">
+            <h2>Activités Extra-Académiques</h2>
+            <div>
+                <h3>Trésorier Associatif</h3>
+                <p class="subtitle univ"><strong>Associations Artémis et Mirage</strong></p>
+                <p>
+                    Participation active au montage de projets et à la gestion administrative[cite: 36, 37]. 
+                    Responsable de la gestion budgétaire, de la comptabilité, de la rédaction de bilans financiers et du montage de dossiers administratifs (FSDIE)[cite: 36, 37].
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact & Réseaux</h2>
+            <p>Vous avez un projet en tête ou simplement envie d'échanger ? Contactez-moi via mes réseaux ou par e-mail :</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/Loic-Smetryns" class="social-btn" target="_blank">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/lo%C3%AFc-smetryns-a708ba337" class="social-btn" target="_blank">💼 LinkedIn</a>
+                <a href="mailto:loic.smetryns@gmail.com" class="social-btn">✉️ E-mail</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Loïc Smetryns. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
